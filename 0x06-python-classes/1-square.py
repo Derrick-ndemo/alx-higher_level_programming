@@ -4,6 +4,6 @@
 
 
 class Square:
-    def __init__(self):
+    def __init__(self, size):
         # Initialize private attriutes
         self.__size = size
