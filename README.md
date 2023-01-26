@@ -2,7 +2,7 @@
 
 # Zen (Python) 
 
->Not sure if C has taught me to think like a programmer or python is just really easy.
+>Not sure if C has taught me to think like a programmer or python is just really easy. LOL.
 
 <details>
 <summary>The Zen of Python, by Tim Peters</summary>
@@ -46,7 +46,7 @@ Namespaces are one honking great idea -- let's do more of those!
 
 ## About
 
-- This repository consists of all the .Subject projects done with [ALX Africa](https://www.alxafrica.com/) Full stack Software Engineering course in partnership with [Holberton School](https://www.holbertonschool.com/) by [Derrick-ndemo](https://Derrick-ndmeo/tk).
+- This repository consists of all projects associated with higher level programming especially python. Subject projects done with [ALX Africa](https://www.alxafrica.com/) Full stack Software Engineering course in partnership with [Holberton School](https://www.holbertonschool.com/) by [Derrick-ndemo](https://Derrick-ndmeo/tk).
 
 
 ## Resource
