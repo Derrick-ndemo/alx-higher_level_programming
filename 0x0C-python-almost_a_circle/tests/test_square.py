@@ -1,16 +1,17 @@
 #!/usr/bin/python3
+'''Importing modules'''
 from contextlib import redirect_stdout
 import contextlib
 import inspect
 import io
 import unittest
-from models.base import Base
-from models.rectangle import Rectangle
-from models.square import Square
 import os
 import sys
 import json
 from io import StringIO
+from models.base import Base
+from models.rectangle import Rectangle
+from models.square import Square
 
 
 '''
