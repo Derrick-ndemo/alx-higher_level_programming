@@ -112,7 +112,6 @@ class Rectangle(Base):
                 - 5th argument represents y attribute
             **kwargs (dict): New key/value pairs of attributes.
         """
-        argument = list(args)  # Unpacking the tuple
         """Getting the index and value and assigning them appropriately"""
         if args and len(args) != 0:
             a = 0
