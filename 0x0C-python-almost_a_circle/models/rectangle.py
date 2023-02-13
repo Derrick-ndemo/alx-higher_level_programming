@@ -44,7 +44,6 @@ class Rectangle(Base):
                 raise ValueError('width must be > 0')
             self.__width = value
 
-
         @property
         def height(self):
             """Get the height of the Rectangle"""
@@ -95,7 +94,7 @@ class Rectangle(Base):
 
         def display(self):
             """Prints in stdout the rectangle instance with char #"""
-            [print() for y in range(self.y)] # Handling Y coordinate
+            [print() for y in range(self.y)]  # Handling Y coordinate
             for i in range(self.height):
                 [print(" ", end="") for x in range(self.x)]
                 for j in range(self.width):
@@ -105,3 +104,19 @@ class Rectangle(Base):
         def __str__(self):
             """Updates the string method"""
             return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
+
+        def update(self, *args):
+            """Update the Rectangle.
+        Args:
+            *args (ints): New attribute values.
+                - 1st argument represents id attribute
+                - 2nd argument represents width attribute
+                - 3rd argument represent height attribute
+                - 4th argument represents x attribute
+                - 5th argument represents y attribute
+            **kwargs (dict): New key/value pairs of attributes.
+        """
+        argument = list(args)
+        for arg, index in enumerate(argument):
+            arg[index] = self.__init__(self.width, self.height,
+                                       self.x, self.y, self.id)
