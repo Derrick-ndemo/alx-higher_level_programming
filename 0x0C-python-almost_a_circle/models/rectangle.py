@@ -95,8 +95,10 @@ class Rectangle(Base):
 
         def display(self):
             """Prints in stdout the rectangle instance with char #"""
-            for i in range(self.width):
-                for j in range(self.height):
+            [print() for y in range(self.y)] # Handling Y coordinate
+            for i in range(self.height):
+                [print(" ", end="") for x in range(self.x)]
+                for j in range(self.width):
                     print("#", end="")
                 print()
 
