@@ -1,5 +1,10 @@
--- Description: Create a read-only user for the database
-CREATE DATABASE IF NOT EXISTS htbn_0d_2;
-CREATE USER IF NOT EXISTS 
-'usr_0d_2'@'localhost' IDENTIFIED BY 'usr_0d_2_pwd';
-GRANT SELECT ON htbn_0d_2.* TO 'usr_0d_2'@'localhost';
+-- Creates the database hbtn_0d_2 and the user user_0d_2
+-- The user_0d_2 has SELECT privilege on hbtn_0d_2 with password user_0d_2_pwd
+CREATE DATABASE
+    IF NOT EXISTS `hbtn_0d_2`;
+CREATE USER
+    IF NOT EXISTS 'user_0d_2'@'localhost'
+    IDENTIFIED BY 'user_0d_2_pwd';
+GRANT SELECT
+   ON `hbtn_0d_2`.*
+   TO 'user_0d_2'@'localhost';
