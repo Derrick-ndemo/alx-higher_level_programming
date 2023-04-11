@@ -6,8 +6,7 @@
  * Otherwise print "Arguments found"
  * */
 
-let myArgs = process.argv.length;
-myArgs -= 2; 
+const myArgs = process.argv.length - 2;
 
 switch (myArgs) {
 	case 0:
