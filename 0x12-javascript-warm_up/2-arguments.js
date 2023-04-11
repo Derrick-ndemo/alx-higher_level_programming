@@ -7,10 +7,12 @@
  * */
 
 let myArgs = process.argv.length;
+myArgs -= 2; 
 
 switch (myArgs) {
 	case 0:
 		console.log('No argument');
+		break;
 	case 1:
 		console.log('Argument found');
 		break;
