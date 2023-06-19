@@ -8,7 +8,6 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 
-
 if __name__ == "__main__":
     """ delete all State objects with a name containing the letter """
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'

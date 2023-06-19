@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
-"""Script that takes in the name of a state as an argument and lists all using the database hbtn_0e_4_usa"""
+"""Script that takes in the name of a
+state as an argument and lists all
+using the database hbtn_0e_4_usa
+"""
 
 import MySQLdb
 import sys

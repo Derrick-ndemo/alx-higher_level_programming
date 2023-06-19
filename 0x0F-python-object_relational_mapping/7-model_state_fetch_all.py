@@ -9,7 +9,9 @@ from model_state import Base, State
 
 
 if __name__ == "__main__":
-    """ Function that lists all State objects from the database hbtn_0e_6_usa """
+    """ Function that lists all State
+        objects from the database hbtn_0e_6_usa
+    """
 
     user = argv[1]
     passwd = argv[2]

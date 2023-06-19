@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 
-""" Module that lists all State objects that contain the letter a from the database"""
+""" Module that lists all State objects
+    that contain the letter a from the database
+"""
 
 from sys import argv
 from model_state import Base, State
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-
 
 
 if __name__ == "__main__":

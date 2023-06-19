@@ -1,18 +1,28 @@
 #!/usr/bin/python3
 
-
+""" Importing necessary modules """
 import MySQLdb
-import sys
+from sys import argv
 
 if __name__ == "__main__":
-    """script that takes in arguments and displays all values in the states table of hbtn_0e_0_usa where name matches the argument. But this time, write one that is safe from MySQL injections!"""
-    db = MySQLdb.connect(host="localhost", port=3306, user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3], charset="utf8")
+    """ Script that takes in arguments and displays all values in the states
+        table of hbtn_0e_0_usa where name matches the argument.
+        But this time, write one that is safe from MySQL injections!
+    """
+    # Connecting to a MySQL database
+    db = MySQLdb.connect(host="localhost", port=3306, user=argv[1],
+                         passwd=argv[2], db=argv[3], charset="utf8")
+    # Creating cursor
     cur = db.cursor()
-    query = ("SELECT * FROM states WHERE name LIKE BINARY %S ORDER BY id ASC")
-    value = (sys.argv[4], )
-    cur.execute(query, value)
-    rows = cur.fetchall()
-    for row in rows:
+    # Executing query
+    cur.execute("SELECT * FROM states WHERE name = %s ORDER BY id ASC",
+                (argv[4],))
+    # Obtaining query results
+    query_rows = cur.fetchall()
+    # Printing the results
+    for row in query_rows:
         print(row)
+    # Close cursor
     cur.close()
+    # Close connection to database
     db.close()
